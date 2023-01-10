@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 
-const AddPlaceScreen = () => {
+const PlaceForm = () => {
   return (
     <View>
-      <Text>AddPlaceScreen</Text>
+      <Text>PlaceForm</Text>
     </View>
   )
 }
 
-export default AddPlaceScreen
+export default PlaceForm
 
 const styles = StyleSheet.create({})

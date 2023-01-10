@@ -1,13 +1,16 @@
-import { FlatList, StyleSheet } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 
 const PlacesList = ({ places }) => {
   if (!places || places.length === 0) {
-    <View style={styles.fallBackContainer}>
-      <Text style={styles.fallbackText}>
-        No places added yet - start adding some!
-      </Text>
-    </View>;
+    return (
+      <View style={styles.fallBackContainer}>
+        <Text style={styles.fallbackText}>
+          No places added yet - start adding some!
+        </Text>
+      </View>
+    );
   }
+
   return (
     <FlatList
       data={places}
